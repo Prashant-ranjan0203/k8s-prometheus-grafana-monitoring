@@ -41,7 +41,7 @@ Prometheus is used as the core metrics collection and time-series database.
 - Confirmed scraping of Kubernetes components (kubelet, node-exporter, etc.)
 
 #### Prometheus Targets Check
-![Prometheus up metric](images/screenshots/prometheus-up-metric.png)
+![Prometheus up metric](images/screenshots/prometheus-up-query.png)
 
 
 
