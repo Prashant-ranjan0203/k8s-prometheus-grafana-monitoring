@@ -53,6 +53,29 @@ The Node dashboard displays CPU and memory usage for the Minikube node
 
 ![Grafana Node Dashboard](images/screenshots/grafana.png)
 
+## 🚨 Alerting with Prometheus & Alertmanager
+
+This project includes custom alerting rules implemented using PrometheusRule CRDs.
+
+### Custom Alert: HighNodeCPUUsage
+- Metric: node_cpu_seconds_total
+- Threshold: >70% CPU usage
+- Duration: 2 minutes
+- Severity: warning
+
+### Alert Flow
+1. Prometheus evaluates metrics using PromQL
+2. Alert fires when condition is met
+3. Alert is sent to Alertmanager
+4. Alert is visible in Alertmanager UI
+
+### Alert Validation
+- CPU load was generated on the node
+- Alert transitioned from Inactive → Firing
+- Alert was visible in both Prometheus and Alertmanager dashboards
+
+
+
 
 ## ⚙️ Setup Steps
 
