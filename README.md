@@ -28,6 +28,32 @@ User Browser
 
 ![Kubernetes Monitoring Architecture](images/architecture.png)
 
+
+## Monitoring & Observability
+
+###  Prometheus
+
+Prometheus is used as the core metrics collection and time-series database.
+
+**Key validations performed:**
+- Verified target discovery using `up` metric
+- Queried node CPU usage using PromQL
+- Confirmed scraping of Kubernetes components (kubelet, node-exporter, etc.)
+
+#### Prometheus Targets Check
+![Prometheus up metric](images/screenshots/prometheus-up-metric.png)
+
+
+
+### Grafana 
+
+Grafana is used for visualization of Kubernetes metrics collected by Prometheus.
+
+The Node dashboard displays CPU and memory usage for the Minikube node
+
+![Grafana Node Dashboard](images/screenshots/grafana.png)
+
+
 ## ⚙️ Setup Steps
 
 ### 1. Start Minikube
