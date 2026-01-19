@@ -24,6 +24,9 @@ User Browser
 → Grafana (port-forward)  
 → Prometheus  
 → Kubernetes Metrics (kubelet, node-exporter, kube-state-metrics)
+## 🏗 Architecture Diagram
+
+![Kubernetes Monitoring Architecture](images/architecture.png)
 
 ## ⚙️ Setup Steps
 
